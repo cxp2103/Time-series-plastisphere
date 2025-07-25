@@ -1,0 +1,69 @@
+library(ggcor)
+library(vegan)
+library(tidyverse)
+library(openxlsx) 
+
+varechem1 <- read.xlsx("KEGG_levelB.xlsx", rowNames = TRUE)
+varespec1 <- read.xlsx("Genomesize.xlsx", rowNames = TRUE)
+
+mdata <- correlate(varechem1, method = "pearson")
+r <- mdata$r
+p <- mdata$p
+
+mantel <- mantel_test(
+  varespec1,
+  varechem1,
+  method = "spearman",
+  permutations = 9999
+)
+
+mantel$r_abs<-abs(mantel$r)
+
+
+mantel <- mantel %>% mutate(rd = cut(r_abs, breaks = c(-Inf, 0.2, 0.4, Inf),
+                                     labels = c("< 0.2", "0.2-0.4", ">= 0.4")),
+                            pd = cut(p, breaks = c(-Inf, 0.01, 0.05, Inf),
+                                     labels = c("< 0.01", "0.01 - 0.05", ">= 0.05")),
+                            rf=cut(r,breaks=c(-Inf,0,Inf),labels = c("< 0",">0")))  ###这里定义了正负
+
+
+# 热图与Mantel线整合可视化
+g <- qcorrplot(mdata,
+               type = "lower",
+               diag = FALSE) +
+  geom_square() +
+  scale_fill_gradient2(low = "#519CBA",
+                       mid = "white",
+                       high = "#E05B5B",
+                       midpoint = 0,
+                       limits = c(-1, 1)) +
+  geom_mark(
+    only_mark = TRUE,
+    sep = "\n",
+    size = 2,
+    sig_level = c(0.05, 0.01, 0.001),
+    sig_thres = 0.05
+  ) +
+  geom_couple(
+    aes(colour = pd,
+        size = rd,
+        linetype = rf),
+    data = mantel,
+    curvature = nice_curvature()
+  ) +
+  scale_size_manual(values = c(0.4,0.8,1.6)) +
+  scale_colour_manual(values = c('#79C377', '#F7931F', '#CFCECC')) +
+  scale_linetype_manual(values = c("dashed", "solid")) +
+  guides(
+    size = guide_legend(title = "Mantel's |r|",
+                        override.aes = list(colour = "grey35"),
+                        order = 2),
+    colour = guide_legend(title = "Mantel's p",
+                          override.aes = list(size = 3),
+                          order = 1),
+    fill = guide_colorbar(title = "pearson's r", order = 4),
+    linetype = guide_legend(title = "Mantel's r",
+                            override.aes = list(colour = "grey35"),
+                            order = 3)
+  )
+ggsave("mantel_test_heatmap2.pdf", g, width = 8, height = 6, units = "in", family = "serif")
