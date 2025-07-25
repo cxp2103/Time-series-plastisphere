@@ -1,0 +1,138 @@
+rm(list=ls())#clear Global Environment
+
+
+#载入所需R包；
+library(igraph)
+library(Hmisc)
+
+#########网络参数和节点属性计算需要的包
+library(phyloseq)
+library(ggClusterNet)
+library(tidyverse)
+library(Biostrings)
+
+library(ggplot2)#出图
+###########################################################################################################A1组
+###########################################################################################################A1_CK组
+#读入OTU丰度表；
+otu <- read.delim(file="otu_A1_CK.txt", sep="\t", header=T, check.names=F, row.names = 1)
+
+
+# #将样本发现率低于10%的otu过滤掉；
+otu_A<- otu[which(apply(otu, 1, function(x) sum(x>0))>=(ncol(otu)/10)), ]
+
+
+#计算相关性系数；
+sp.cor<- rcorr(t(otu_A),type="spearman")
+
+#提取r、p值矩阵；
+r.cor<-sp.cor$r
+p.cor<-sp.cor$P
+
+#使用Benjamini-Hochberg("FDR-BH")法进行多重检验校正；
+p.adj <- p.adjust(p.cor, method="BH")
+#确定物种间存在相互作用关系的阈值，将相关性R矩阵内不符合的数据转换为0
+r.cor[p.cor>=0.05|abs(r.cor)<0.6] = 0
+
+
+#添加如下代码，此代码防止下面代码报错的
+Sys.setlocale('LC_ALL','C')
+
+
+#对角线处的1不计
+diag(r.cor) <- 0
+
+#筛选后的节点计算的相关性表，依旧会存在孤立节点（与其它节点相关性皆为0），行列都要进行筛选。如果只需符合筛选要求（样本出现的频率），下面两行代码不需要跑。
+r.cor=r.cor[which(rowSums(abs(r.cor)) > 0),] #每行和的绝对值>0
+r.cor=r.cor[,which(colSums(abs(r.cor)) > 0)] #每列和的绝对值>0
+
+#######需要将分类内部数据数据设为0
+#r.cor[1:1152, 1:1152] <-0
+#r.cor[1153:1975, 1153:1975] <-0
+#r.cor[1976:2049, 1976:2049] <-0
+
+write.table (r.cor,file="R相关系数_A1_CK.txt", sep="\t", quote =T,col.names = NA)
+
+#查看过滤后的矩阵；
+dim(r.cor)
+r.cor[1:10,1:10]
+
+#使用邻接矩阵（即相关系数矩阵）创建网络；
+A<-graph.adjacency(r.cor,weight=T,mode="undirected")
+#去掉冗余的边（multiple edges、loop edges）；
+A<-simplify(A)
+
+#提取权重
+df_weight = E(A)$weight
+# 设定边的宽度，这里我们将相关系数与边宽进行关联
+E(A)$width = abs(df_weight)*5      #E(A),网络A的边矩阵
+
+#加入OTU丰度信息
+data <- rowSums(otu_A)
+data1=as.data.frame(data)
+df_igraph_size = data1[V(A)$name,] # 筛选对应OTU属性     #V(A),网络A的节点矩阵
+df_igraph_size2 = log10(df_igraph_size)#数据进行转换
+V(A)$Abundance = df_igraph_size2      #这个abundance是所有样本的丰度之和再取对得到的结果，貌似没有特殊的意义。所以看上去像是有负值
+
+#加入物种信息,使用不同颜色表示
+data2=read.delim(file="Genus_otu.txt",sep="\t",header=T,
+                 check.names=FALSE,row.names = 1)
+df_igraph_col = data2[V(A)$name,]
+V(A)$G = as.character(df_igraph_col$Tax_Genus)
+###########试一试这个表加全界、门、纲、目、科、属
+#生成网络图的结点标签（OTU id）和degree属性；
+V(A)$label <-  V(A)$name
+V(A)$degree <- degree(A)
+#查看网络图的对象结构;
+print(A)
+
+#节点模块化计算和可视化
+result = nodeEdge(cor = r.cor) #相关性矩阵的r.cor的点边信息。
+#提取边文件
+edge = result[[1]]
+E(A)$pn <- as.character(edge$direction) #赋予E(A)的pn(positive or nagetive)属性，方便画图添加这个配色
+#提取节点文件
+node = result[[2]]
+igraph  = igraph::graph_from_data_frame(edge, directed = FALSE, vertices = node) #这个赋值过程使igraph与上文的A等效
+res = ZiPiPlot(igraph = igraph,method = "cluster_fast_greedy") #计算ZiPi 这一步有点慢
+p <- res[[1]] #[1]画图
+ZiPi<-res[[2]] #数据文件其中Z和P列分别表示Zi和Pi，Module表示所在的模块序号
+ZiPi$Genus<-rownames(ZiPi)
+
+#将网络图导出为"graphml"、"gml"格式，方便导入Gephi中使用；
+write_graph(A, "A1_CK.graphml", format="graphml")
+
+#利用ggcluster包跑出网络属性和节点性质
+dat = net_properties(A)#这一步必须，保证net_properties.2运行
+dat = net_properties.2(A,n.hub = T)#这一步有点慢
+#节点性质计算
+nodepro <- node_properties(A)
+#节点性质表接着添加分类表"Genus_otu.txt"的信息和Hub点信息
+nodepro <-as.data.frame(nodepro)#不变成数据框，无法赋值新一列为列标签
+nodepro$Genus<-rownames(nodepro)#添加Genus一列，并等同行标签名
+nodepro$id<-1:nrow(nodepro)#赋值id为行号
+nodepro<-merge(nodepro,ZiPi,by="Genus")#添加节点的ZiPi的信息（添加ZiPi表的信息）
+df_igraph_col$Genus<-rownames(df_igraph_col)#添加Genus一列，并等同行标签名
+nodepro<-merge(nodepro,df_igraph_col,by="Genus") #df_igraph_col已是筛选过的信息#按Genus合并
+nodepro <- nodepro[order(nodepro$id), ]#根据id进行排序，恢复原顺序
+write.table (dat, file ="网络属性_A1_CK.txt",sep ="\t", quote =F,col.names = NA)
+write.table (nodepro, file ="节点属性_A1_CK.txt",sep ="\t", quote =F,col.names = NA)
+
+#关键OTU筛选 Hub点排序，上方的Hub信息更多从ZiPi信息考虑
+hub = hub_score(A)$vector %>% #
+  sort(decreasing = TRUE) %>%
+  head(10000) %>%       #选取10000，尽可能的将节点全选进去
+  as.data.frame()
+colnames(hub) = "hub_sca"
+ggplot(hub) +
+  geom_bar(aes(x = hub_sca,y = reorder(row.names(hub),hub_sca)),stat = "identity",fill = "#4DAF4A")
+write.table (hub, file ="hub_sca_A1_CK.txt",sep ="\t", quote =F,col.names = NA)
+#对应随机网络构建和网络参数比对
+result = random_Net_compate(igraph = igraph, type = "gnm", step = 100, netName = layout) #这一步有点慢
+p1 = result[[1]] #图代码：随机网络和网络比较
+p1
+net = result[[2]]#随机网络和网络比较图的信息表
+sum_net = result[[4]] #随机网络参数汇总表
+ggsave(p1,filename = "图_A1_CK.png",width = 8,height = 8)
+write.table (net, file ="表信息_A1_CK.txt",sep ="\t", quote =F,col.names = NA)
+write.table (sum_net, file ="随机网络_A1_CK.txt",sep ="\t", quote =F,col.names = NA)
