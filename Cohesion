@@ -1,0 +1,96 @@
+rm(list=ls())#clear Global Environment
+
+library(ggplot2)
+##############节点属性比较#############
+# 读取数据
+df1 <- read.delim("PE8_节点属性_A1_CK.txt",header = T, check.names = F, row.names=1)
+df2 <- read.delim("PBS8_节点属性_A1_CK.txt",header = T, check.names = F, row.names=1)
+#添加节点的丰度信息
+r1<- read.delim("spieces_PE8.txt",header = T, check.names = F)
+r2<- read.delim("spieces_PBS8.txt",header = T, check.names = F)
+#将8个处理的OTU筛选剔除掉网路分析去除的点
+r1 <- r1[(r1[,1] %in% df1$Genus), ]
+r2 <- r2[(r2[,1] %in% df2$Genus), ]
+ #这部分代码与4.Hub-Relative.....代码一致
+rownames(r1)=r1[,1]#让第一列成为行名
+rownames(r2)=r2[,1]#让第一列成为行名
+r1<-r1[ ,-c(1)] #删除第一列Genus
+r2<-r2[ ,-c(1)] #删除第一列Genus                          
+ 
+###################################################################################A1_CK的连通性和凝聚力指标计算
+#读取物种丰度表
+spe =r1
+
+#读取网络邻接矩阵
+g <- read.delim('PE8_R相关系数_A1_CK.txt', row.names = 1, sep = '\t', check.names = FALSE)
+
+#计算各物种的正、负连通性
+r_pos <- c()
+r_neg <- c()
+spe_i <- c()
+
+for (i in names(g)) {
+    co <- na.omit(g[[i]])
+    r_pos <- c(r_pos, mean(co[co>0]))
+    r_neg <- c(r_neg, mean(co[co<0]))
+    spe_i <- c(spe_i, i)
+}
+r <- data.frame(spe_i, r_pos, r_neg)
+r
+r[is.na(r)] <- 0#替换NaN值为0，原r计算时节点的连通性不存在时会记为NaN，这会影响后续的Cohesion计算。
+
+#计算各样本的正、负凝聚力
+C_pos <- c()
+C_neg <- c()
+sample <- c()
+
+for (j in names(spe)) {
+    C_pos <- c(C_pos, sum(spe[[j]]*r$r_pos))
+    C_neg <- c(C_neg, sum(spe[[j]]*r$r_neg))
+    sample <- c(sample, j)
+}
+C <- data.frame(sample, C_pos, C_neg)
+C$C_total<-C$C_pos+abs(C$C_neg)
+
+#输出
+write.table(r, '连通性_PE8.txt', sep = '\t', row.names = FALSE, quote = FALSE)
+write.table(C, 'Cohesion_PE8.txt', sep = '\t', row.names = FALSE, quote = FALSE)
+
+###################################################################################A1_Cu的连通性和凝聚力指标计算
+#读取物种丰度表
+spe =r2
+
+#读取网络邻接矩阵
+g <- read.delim('PBS8_R相关系数_A1_CK.txt', row.names = 1, sep = '\t', check.names = FALSE)
+
+#计算各物种的正、负连通性
+r_pos <- c()
+r_neg <- c()
+spe_i <- c()
+
+for (i in names(g)) {
+  co <- na.omit(g[[i]])
+  r_pos <- c(r_pos, mean(co[co>0]))
+  r_neg <- c(r_neg, mean(co[co<0]))
+  spe_i <- c(spe_i, i)
+}
+r <- data.frame(spe_i, r_pos, r_neg)
+r
+r[is.na(r)] <- 0#替换NaN值为0，原r计算时节点的连通性不存在时会记为NaN，这会影响后续的Cohesion计算。
+
+#计算各样本的正、负凝聚力
+C_pos <- c()
+C_neg <- c()
+sample <- c()
+
+for (j in names(spe)) {
+  C_pos <- c(C_pos, sum(spe[[j]]*r$r_pos))
+  C_neg <- c(C_neg, sum(spe[[j]]*r$r_neg))
+  sample <- c(sample, j)
+}
+C <- data.frame(sample, C_pos, C_neg)
+C$C_total<-C$C_pos+abs(C$C_neg)
+
+#输出
+write.table(r, '连通性_PBS.txt', sep = '\t', row.names = FALSE, quote = FALSE)
+write.table(C, 'Cohesion_PBS.txt', sep = '\t', row.names = FALSE, quote = FALSE)
