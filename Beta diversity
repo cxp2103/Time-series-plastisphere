@@ -1,37 +1,33 @@
 library(tidyverse)
-#tidyverse一些常用包的集合
 library(ggrepel)
-#加载library(ggrepel)，用于geom_text_repel函数的使用
+library(vegan) # Calculate Bray-Curtis distance
 
-library(vegan) # 计算bray距离
-otu  <-  read.table("40SI_New-virus-S.txt",sep="\t",header = T, row.names=1,check.name=F)
-FL  <-  read.table("单因素分类.txt",sep="\t",header = T, row.names=1 ,check.name=F)
+otu  <-  read.table("ASV.txt",sep="\t",header = T, row.names=1,check.name=F)
+FL  <-  read.table("Beta diversity_group.txt",sep="\t",header = T, row.names=1 ,check.name=F)
 otu<- t(otu)
 bray.dist = vegdist(otu, method="bray")
 
 bc <- as.matrix(bray.dist)
-write.table(bc,file = "bray_40SI_New-virus-S.xls",sep ="\t", quote=F, row.names=F)
+write.table(bc,file = "bray_distance.xls",sep ="\t", quote=F, row.names=F)
 
-library(ape) # pcoa分析
+library(ape) # Perform PCoA analysis
 spe.h.pc <- pcoa(bray.dist)
-str(spe.h.pc)#记录一二轴解释率“Eigenvalues”
+str(spe.h.pc) # Record the explained variance of the first and second axes from "Eigenvalues"
 spe.h.pcoa <- spe.h.pc$vectors
 spe.pcoa <- cbind(spe.h.pcoa[,1:2], FL) 
 
-#添加样品标签行
+# Add sample labels
 spe.pcoa$samples<-rownames(spe.pcoa)
-write.csv(spe.pcoa,"pcoa坐标40SI_New_virus-S.csv")
+write.csv(spe.pcoa,"pcoa_coordinates.csv")
 
-# 置换多元方差分析
+# Perform permutational multivariate analysis of variance
 spe <- bray.dist
 env <- select(spe.pcoa, Niche)
 
-#利用adonis函数进行permanova探究三个因素的交互，结果准确性有待验证？？？
+# Use the adonis function to perform PERMANOVA and test the effect of the grouping factor.
 permanova <- adonis(spe ~ Niche, data = env, permutations = 999,method="bray")
 
-#利用adonis2函数进行permanova，注意adonis2函数无法识别三个因素的交互，探究三个两因素的交互
-#permanova2 <- adonis2(spe ~ Types*Locations*Treatments, data = env, permutations = 999,method="bray")
-
+# Use the adonis2 function to perform PERMANOVA.
 permanova2 <- adonis2(spe ~ Niche, data = env, permutations = 999,method="bray")
 
 library(pairwiseAdonis)
@@ -46,19 +42,19 @@ fcnames2 <- row.names(permanova2)
 
 
 
-#获取双因素的数据
-#adonis函数的结果
+# Extract results for the grouping factor
+# Results from the adonis function
 lab <- paste('PERMANOVA\n',fcnames[1],':R^2=',round(permanova$aov.tab[1,5],2),' p=', 
              round(permanova$aov.tab[1,6],3), '\n',
              sep = ''
 )
-#adonis2函数的结果
+# Results from the adonis2 function
 lab2 <- paste('PERMANOVA\n',fcnames2[1],':R^2=',round(permanova2[1,3],2),' p=', 
               round(permanova2[1,5],3), '\n',
               sep = ''
 )
 
-#备注分组信息
+# Define colors for group annotation
 color = c("#EE8E7E","#A6CB90","#7c9fb0","#D33502","#4E9F76","#466c95","#C1E6BC","#E9A734","#E79F87","#7F75E9","#C14329",
                    "#8AC20C","#D191E6","#A76A28","#3B0956","#7E96FB","#87C8C5","#947F06",
                    "#D59834","#5C040D","#A49EF0","#9C0AA6","#E75F26","#3F60A3")
@@ -69,26 +65,26 @@ ggplot(data=spe.pcoa, aes(x=Axis.1, y=Axis.2,# shape= Niche,
   theme_bw()+
   geom_hline(yintercept=0,linetype=2,color='gray') + 
   geom_vline(xintercept=0,linetype=2,color='gray')+
-  # 把两个轴的贡献度写出来
+# Show the percentage of variance explained by the first two axes
   xlab(paste('Axis.1: ', round(spe.h.pc$values$Relative_eig[1],3)*100, '%', sep = '')) +
   ylab(paste('Axis.2: ', round(spe.h.pc$values$Relative_eig[2],3)*100, '%', sep = '')) +
-  scale_color_manual(values = color) +#点的颜色设置
+  scale_color_manual(values = color) +# Set point colors
   geom_text_repel(data =spe.pcoa,aes(Axis.1, Axis.2,label=samples),size=3)+
   stat_ellipse(data=spe.pcoa,aes(x =Axis.1, y =Axis.2, fill =treatment), linetype = 1,
               geom='polygon',alpha=0.3,
                level = 0.5,show.legend = F,inherit.aes = F)+
-  scale_fill_manual(values = c("#EE8E7E","#A6CB90","#7c9fb0"))
+  scale_fill_manual(values = c("#EE8E7E","#A6CB90","#7c9fb0"))+
   theme(panel.background = element_rect(fill = "transparent",colour = NA),
         aspect.ratio = 1) +
-  # 用annotate把双因素结果写在左上角
+# Use annotate to add the PERMANOVA result to the lower-right corner
   annotate(geom = 'text',label = lab, size =2,
            x = max(spe.pcoa$Axis.1), y = min(spe.pcoa$Axis.2),
            hjust = 1,
            vjust =0)
 
-#ANOSIM,按XX的adosim分析
+# Perform ANOSIM analysis according to the selected grouping variable
 anosim_result<-anosim(otu,spe.pcoa$Niche,permutations = 999)
 summary(anosim_result)
 plot(anosim_result, col = c('#FFD700','#FF7F00','#EE2C2C','#D02090'))
 
-ggsave("Virus_bray_time_PBS.png",width = 8,height = 7)
+ggsave("ASV.png",width = 8,height = 7)
