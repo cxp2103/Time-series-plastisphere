@@ -7,22 +7,22 @@ library(picante)
 library(dplyr)
 library(RColorBrewer)
 
-# 2. Calculate alpha diversity indices, including ACE, Chao, Shannon, Simpson, and other indices
-## Import the OTU table.
-## The required input table should have sample names as row names and OTU IDs as column names.
-df <- read.delim("otu.txt",header = T, row.names = 1, check.names = F)
+# Calculate alpha diversity indices, including ACE, Chao, Shannon, Simpson, and other indices
+## Import the ASV table.
+## The required input table should have sample names as row names and ASV IDs as column names.
+df <- read.delim("ASV.txt",header = T, row.names = 1, check.names = F)
 # Calculate diversity indices using the vegan package
 Shannon <- diversity(df, index = "shannon", MARGIN = 2, base = exp(1))
 Simpson <- diversity(df, index = "simpson", MARGIN = 2, base =  exp(1))
 Richness <- specnumber(df, MARGIN = 2)#spe.rich =sobs
-### Combine the calculated diversity indices into a table
+## Combine the calculated diversity indices into a table
 index <- as.data.frame(cbind(Shannon, Simpson, Richness))
 tdf <- t(df)# Transpose the OTU table
 tdf<-ceiling(as.data.frame(t(df)))
 # Calculate observed richness, Chao, and ACE indices
 obs_chao_ace <- t(estimateR(tdf))
 obs_chao_ace <- obs_chao_ace[rownames(index),]#统一行名
-# Merge observed richness, Chao, and ACE indices with the previously calculated diversity indices
+## Merge observed richness, Chao, and ACE indices with the previously calculated diversity indices
 index$Chao <- obs_chao_ace[,2]
 index$Ace <- obs_chao_ace[,4]
 index$obs <- obs_chao_ace[,1]
