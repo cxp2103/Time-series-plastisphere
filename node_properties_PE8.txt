@@ -1,0 +1,293 @@
+	Genus	igraph.degree	igraph.closeness	igraph.betweenness	igraph.cen.degree	id	z	module	p	roles	label	role_7	Tax_Genus	Phylum	Class	Order	Family
+102	Unassigned	10	0.328125	119.225246433314	10	1	-0.771302479936147	8	0.4032	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Burkholderiaceae
+232	uncultured_bacterium	10	0.312396694214876	63.5623029130263	10	2	-0.910578445580232	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Gracilibacteria	JGI_0000069-P22	No_Rank
+276	uncultured_soil_bacterium	8	0.326989619377163	257.003784928629	8	3	-1.26858960515814	8	0.095	Peripherals		peripheral	Bacteria	Actinobacteriota	Thermoleophilia	Solirubrobacterales	67-14
+136	metagenome	12	0.344890510948905	268.747735329749	12	4	-0.274015354714157	8	0.375	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Rhodocyclaceae
+92	Sinimarinibacterium_sp.	16	0.329842931937173	41.5513108849726	16	5	0.720558895729821	8	0.4032	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	Solimonadaceae
+10	Bdellovibrio_bacteriovorus	18	0.35195530726257	143.683070849837	18	6	0.552709187491932	7	0	Peripherals		ultra peripheral	Bacteria	Bdellovibrionota	Bdellovibrionia	Bdellovibrionales	Bdellovibrionaceae
+123	bacterium_enrichment_culture_clone_SRAO_28	12	0.353271028037383	292.245834990651	12	7	-0.544756537312191	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Micavibrionales	uncultured
+259	uncultured_organism	8	0.306818181818182	137.189960812978	8	8	-1.26858960515814	8	0.0798611111111112	Peripherals		peripheral	Bacteria	Nitrospirota	Nitrospiria	Nitrospirales	Nitrospiraceae
+206	uncultured_Planctomycetales_bacterium	11	0.344262295081967	131.815326733996	11	9	-0.522658917325152	8	0.375	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+261	uncultured_prokaryote	22	0.37875751503006	171.330013914728	22	10	1.28435300402801	7	0.345679012345679	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae
+5	Aquabacterium_citratiphilum	13	0.367704280155642	359.586498498007	13	11	-0.0253717921031627	8	0.497041420118343	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Comamonadaceae
+52	Flavobacterium_cauense	20	0.369140625	246.975993925769	20	12	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae
+252	uncultured_delta_proteobacterium	25	0.391304347826087	363.06171267657	25	13	1.83308586643008	7	0.197530864197531	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae
+230	uncultured_actinobacterium	20	0.375	245.066873970125	20	14	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	Rhodanobacteraceae
+8	Bacteriovorax_sp._F2	12	1	0	12	15	0	6	0.244897959183674	Peripherals		peripheral	Bacteria	Bdellovibrionota	Bdellovibrionia	Bacteriovoracales	Bacteriovoracaceae
+198	uncultured_Myxococcales_bacterium	8	0.300476947535771	48.8633398658895	8	16	-1.27640035384827	7	0	Peripherals		ultra peripheral	Bacteria	Myxococcota	Polyangia	Nannocystales	Nannocystaceae
+59	Ignavibacteria_bacterium_RIFOXYC2_FULL_38_25	13	0.356603773584906	73.5880811910862	13	17	-0.361845583178171	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Ignavibacteria	Ignavibacteriales	SR-FBR-L83
+260	uncultured_planctomycete	8	0.300476947535771	48.8633398658895	8	18	-1.27640035384827	7	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Planctomycetales	Rubinisphaeraceae
+118	bacterium_enrichment_culture_clone_B176(2011)	14	0.362068965517241	201.805104017289	14	19	0.223271770507832	8	0.336734693877551	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+44	Chlorobi_bacterium_OLB5	25	0.391304347826087	363.06171267657	25	20	1.83308586643008	7	0.197530864197531	Peripherals		peripheral	Bacteria	Bacteroidota	Ignavibacteria	SJA-28	No_Rank
+24	Candidatus_Magasanikbacteria_bacterium_RIFOXYD1_FULL_40_23	9	0.303858520900322	43.9470642854225	9	21	-1.09348939971425	7	0.095	Peripherals		peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Magasanikbacteria	No_Rank
+131	gamma_proteobacterium_HdN1	15	0.340540540540541	88.7245632743972	15	22	0.00397632508987011	7	0.345679012345679	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Halomonadaceae
+75	Oleiharenicola_alkalitolerans	4	0.30983606557377	51.1076427384214	4	23	-2.26316385560211	8	0.375	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Opitutaceae
+129	denitrifying_bacterium_enrichment_culture_clone_NOB_2_A7	9	0.329268292682927	66.1603583096562	9	24	-1.01994604254714	8	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Kryptonia	Kryptoniales	BSV26
+93	Sinobacteraceae_bacterium	12	0.324185248713551	46.3908714636924	12	25	-0.544756537312191	7	0.277777777777778	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	Solimonadaceae
+187	uncultured_Haliea_sp.	18	0.363461538461538	287.690404808411	18	26	1.21784602095181	8	0.197530864197531	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Spongiibacteraceae
+100	Thermomonas_koreensis	18	1	0	18	27	0	2	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	Xanthomonadaceae
+292	wastewater_metagenome	12	0.335106382978723	148.928998037795	12	28	-0.274015354714157	8	0.5	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Sphingobacteriales	Lentimicrobiaceae
+216	uncultured_Saprospiraceae_bacterium	24	0.384928716904277	220.776758906699	24	29	1.65017491229605	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae
+7	Atopobium_vaginae_DSM_15829	8	0.327556325823224	211.431449625155	8	30	-1.26858960515814	8	0	Peripherals		ultra peripheral	Bacteria	Actinobacteriota	Coriobacteriia	Coriobacteriales	Atopobiaceae
+247	uncultured_beta_proteobacterium	11	0.316053511705686	84.1535871370326	11	31	-0.522658917325152	8	0.20414201183432	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Burkholderiaceae
+151	uncultured_Bacteroidetes_bacterium	9	0.328125	212.604313229471	9	32	-1.01994604254714	8	0.2112	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	uncultured
+124	bacterium_enrichment_culture_clone_SRAO_34	20	0.381818181818182	232.476175841092	20	33	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae
+122	bacterium_enrichment_culture_clone_KIST-JJY167	13	0.343636363636364	276.898644437831	13	34	-0.361845583178171	7	0.095	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+291	unidentified_marine_bacterioplankton	17	0.34115523465704	162.686616373154	17	35	0.369798233357911	7	0.359861591695502	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	uncultured
+99	Terrimonas_sp._16-45A	12	0.327556325823224	93.2145481349408	12	36	-0.274015354714157	8	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Chitinophagaceae
+258	uncultured_marine_bacterium	20	0.381818181818182	232.476175841092	20	37	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Kapabacteria	Kapabacteriales	No_Rank
+94	Solimonas_aquatica	17	1	0	17	38	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	Solimonadaceae
+48	Dongia_rigui	9	0.329268292682927	66.1603583096562	9	39	-1.01994604254714	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Dongiales	Dongiaceae
+161	uncultured_Chloroflexi_bacterium	6	0.314475873544093	87.3135270226581	6	40	-1.64222226211631	7	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae
+105	Vogesella_fluminis	16	0.340540540540541	446.855057059339	16	41	0.720558895729821	8	0.375	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Chromobacteriaceae
+224	uncultured_Verrucomicrobia_bacterium	17	0.35	111.408221238406	17	42	0.369798233357911	7	0.359861591695502	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Verrucomicrobiaceae
+227	uncultured_Xanthomonadaceae_bacterium	14	0.33041958041958	173.913932028888	14	43	-0.17893462904415	7	0.32	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	Solimonadaceae
+58	Ignavibacteria_bacterium_RIFCSPLOWO2_12_FULL_56_21	15	0.355263157894737	470.661890918049	15	44	0.00397632508987011	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Kryptonia	Kryptoniales	BSV26
+28	Candidatus_Nomurabacteria_bacterium_GW2011_GWE1_32_28	20	0.369140625	101.128983224638	20	45	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Nomurabacteria	No_Rank
+237	uncultured_bacterium_PHOS-HE25	14	0.362068965517241	201.805104017289	14	46	0.223271770507832	8	0.336734693877551	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+266	uncultured_sludge_bacterium_A17	13	0.329842931937173	22.1993148787825	13	47	-0.0253717921031627	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+201	uncultured_Parcubacteria_group_bacterium	11	0.323076923076923	87.8948929403905	11	48	-0.522658917325152	8	0.375	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Kaiserbacteria	No_Rank
+202	uncultured_Pelobacter_sp.	14	0.363461538461538	451.779729989352	14	49	0.223271770507832	8	0.46875	Peripherals		peripheral	Bacteria	Latescibacterota	No_Rank	No_Rank	No_Rank
+160	uncultured_Chlorobiales_bacterium	8	0.326989619377163	257.003784928629	8	50	-1.26858960515814	8	0.46875	Peripherals		peripheral	Bacteria	Bacteroidota	Ignavibacteria	Ignavibacteriales	BSV40
+282	uncultured_verrucomicrobium_DEV006	11	0.344890510948905	213.57527691831	11	51	-0.727667491446212	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Verrucomicrobiaceae
+159	uncultured_Chlorobi_bacterium	16	0.358633776091082	363.819570307588	16	52	0.186887279223891	7	0.165289256198347	Peripherals		peripheral	Bacteria	Bacteroidota	Ignavibacteria	SJA-28	No_Rank
+162	uncultured_Chloroflexia_bacterium	18	0.363461538461538	287.690404808411	18	53	1.21784602095181	8	0.444444444444444	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	1ÔÂ20ÈÕ	No_Rank
+225	uncultured_Verrucomicrobiales_bacterium	11	0.346153846153846	160.406397903603	11	54	-0.727667491446212	7	0.18	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	DEV007
+138	microbial_mat_metagenome	24	0.397058823529412	288.897830005311	24	55	1.65017491229605	7	0	Peripherals		ultra peripheral	Bacteria	Bdellovibrionota	Bdellovibrionia	Bacteriovoracales	Bacteriovoracaceae
+134	magnetic_coccus_MP17	14	1	0	14	56	0	5	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Magnetococcia	Magnetococcales	Magnetococcaceae
+210	uncultured_Rhodocyclaceae_bacterium	20	1	0	20	57	0	1	0.486111111111111	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Rhodocyclaceae
+256	uncultured_gamma_proteobacterium	16	0.354596622889306	264.574487078698	16	58	0.186887279223891	7	0.396694214876033	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Oleiphilaceae
+76	Omnitrophica_bacterium_OLB16	20	0.363461538461538	152.142001866612	20	59	0.918531095759973	7	0.308390022675737	Peripherals		peripheral	Bacteria	Sumerlaeota	Sumerlaeia	uncultured	No_Rank
+27	Candidatus_Nomurabacteria_bacterium_GW2011_GWB1_35_20	6	0.277533039647577	17.5749693039776	6	60	-1.64222226211631	7	0.277777777777778	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Nomurabacteria	No_Rank
+280	uncultured_spirochete	13	0.327556325823224	86.7032188588567	13	61	-0.361845583178171	7	0.332409972299169	Peripherals		peripheral	Bacteria	Spirochaetota	Leptospirae	Leptospirales	Leptospiraceae
+275	uncultured_sludge_bacterium_S41	9	0.323076923076923	116.050089181009	9	62	-1.01994604254714	8	0.0688775510204082	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	Anaerolineales	Anaerolineaceae
+205	uncultured_Planctomycetaceae_bacterium	18	0.370588235294118	101.047923235063	18	63	0.552709187491932	7	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Phycisphaerae	CCM11a	No_Rank
+130	denitrifying_bacterium_enrichment_culture_clone_NOB_2_F8	8	0.277533039647577	119.383262060177	8	64	-1.26858960515814	8	0	Peripherals		ultra peripheral	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	Gemmatimonadaceae
+86	Pirellula_sp._Br1-4	15	0.367704280155642	179.830740796046	15	65	0.00397632508987011	7	0.231111111111111	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+56	Gemmatimonadetes_bacterium_SCN_70-22	19	0.350649350649351	362.511995263872	19	66	1.46648958356281	8	0.456747404844291	Peripherals		peripheral	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	Gemmatimonadaceae
+199	uncultured_Nitrosomonadaceae_bacterium	7	0.306818181818182	92.0890338170033	7	67	-1.51723316776913	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae
+176	uncultured_Desulfuromonadales_bacterium	10	0.324742268041237	80.498871494987	10	68	-0.771302479936147	8	0	Peripherals		ultra peripheral	Bacteria	Desulfobacterota	Desulfuromonadia	PB19	No_Rank
+218	uncultured_Sphingobacteriales_bacterium	18	0.374257425742574	192.966016767108	18	69	0.552709187491932	7	0.459183673469388	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Sphingobacteriales	Sphingobacteriaceae
+67	Methylogaea_oryzae_JCM_16910	13	0.356603773584906	252.434872889478	13	70	-0.361845583178171	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
+97	Sphingomonas_sp._JJ-A5	12	0.343636363636364	271.134118722935	12	71	-0.274015354714157	8	0.444444444444444	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae
+35	Candidatus_Woesebacteria_bacterium_GW2011_GWF1_31_35	20	0.363461538461538	152.142001866612	20	72	0.918531095759973	7	0.459183673469388	Peripherals		peripheral	Bacteria	Patescibacteria	Microgenomatia	Candidatus_Woesebacteria	No_Rank
+265	uncultured_sludge_bacterium_A12b	14	0.321976149914821	363.696407616213	14	73	0.223271770507832	8	0.277777777777778	Peripherals		peripheral	Bacteria	Bacteroidota	Kapabacteria	Kapabacteriales	No_Rank
+149	uncultured_Alphaproteobacteria_bacterium	8	0.322525597269625	141.245931325651	8	74	-1.27640035384827	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Micavibrionales	Micavibrionaceae
+234	uncultured_bacterium_GKS2-30	24	0.388090349075975	393.991844118929	24	75	2.70970739661778	8	0.197530864197531	Module hubs	uncultured_bacterium_GKS2-30	provincial hub	Bacteria	Patescibacteria	Gracilibacteria	Candidatus_Peribacteria	No_Rank
+182	uncultured_Flexibacter_sp.	11	0.316053511705686	84.1535871370326	11	76	-0.522658917325152	8	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Cytophagales	Microscillaceae
+53	Flavobacterium_sp._DK6	15	0.375	184.35419372046	15	77	0.00397632508987011	7	0.32	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Flavobacteriales	Flavobacteriaceae
+195	uncultured_Magnetospirillum_sp.	14	1	0	14	78	0	5	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	uncultured
+188	uncultured_Holophaga_sp.	14	0.342391304347826	158.756116746459	14	79	-0.17893462904415	7	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Subgroup_22	No_Rank	No_Rank
+133	hydrothermal_vent_metagenome	14	0.347426470588235	196.774597685065	14	80	-0.17893462904415	7	0.444444444444444	Peripherals		peripheral	Bacteria	WPS-2	No_Rank	No_Rank	No_Rank
+60	Janthinobacterium_sp.	21	0.372781065088757	414.283602622732	21	81	1.10144204989399	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Oxalobacteraceae
+175	uncultured_Desulfuromonadaceae_bacterium	16	0.329842931937173	41.5513108849726	16	82	0.720558895729821	8	0	Peripherals		ultra peripheral	Bacteria	NB1-j	No_Rank	No_Rank	No_Rank
+272	uncultured_sludge_bacterium_H5	18	0.374257425742574	209.499351277181	18	83	0.552709187491932	7	0.459183673469388	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	SBR1031	No_Rank
+6	Arenimonas_daechungensis	20	0.369140625	101.128983224638	20	84	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Xanthomonadales	Xanthomonadaceae
+64	Leptonema_illini	13	0.36	297.575196088446	13	85	-0.361845583178171	7	0	Peripherals		ultra peripheral	Bacteria	Spirochaetota	Leptospirae	Leptospirales	Leptospiraceae
+239	uncultured_bacterium_SBRH58	17	0.355263157894737	115.911736718843	17	86	0.369798233357911	7	0	Peripherals		ultra peripheral	Bacteria	Dependentiae	Babeliae	Babeliales	No_Rank
+16	Candidatus_Adlerbacteria_bacterium_GW2011_GWC1_50_9	27	0.39622641509434	514.598429340988	27	87	3.45563808445076	8	0	Module hubs	Candidatus_Adlerbacteria_bacterium_GW2011_GWC1_50_9	provincial hub	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Jorgensenbacteria	No_Rank
+31	Candidatus_Nomurabacteria_bacterium_RIFCSPLOWO2_01_FULL_36_10b	10	0.329842931937173	117.429073571705	10	88	-0.771302479936147	8	0.462809917355372	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Campbellbacteria	No_Rank
+110	bacterium_E2-14	18	1	0	18	89	0	2	0.21875	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Chromobacteriaceae
+120	bacterium_enrichment_culture_clone_EBa3	19	0.353932584269663	338.05016863511	19	90	1.46648958356281	8	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	WWE3	No_Rank	No_Rank
+241	uncultured_bacterium_SJP-3	20	1	0	20	91	0	1	0	Peripherals		ultra peripheral	Bacteria	Hydrogenedentes	Hydrogenedentia	Hydrogenedentiales	Hydrogenedensaceae
+190	uncultured_Ignavibacteriales_bacterium	11	0.336298932384342	187.416280822592	11	92	-0.522658917325152	8	0.277777777777778	Peripherals		peripheral	Bacteria	Bacteroidota	Kapabacteria	Kapabacteriales	No_Rank
+181	uncultured_Firmicutes_bacterium	16	0.372781065088757	457.243757281621	16	93	0.720558895729821	8	0	Peripherals		ultra peripheral	Bacteria	WS2	No_Rank	No_Rank	No_Rank
+38	Cenchrus_americanus	12	0.333333333333333	304.628073125776	12	94	-0.544756537312191	7	0.124444444444444	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Verrucomicrobiaceae
+158	uncultured_Chlamydiales_bacterium	15	0.347426470588235	209.329274784085	15	95	0.00397632508987011	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	Simkaniaceae
+226	uncultured_Verrucomicrobium_sp.	7	0.328695652173913	219.454725516656	7	96	-1.45931130798229	7	0.48	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	DEV007
+147	uncultured_Actinobacteridae_bacterium	7	0.310344827586207	43.3799750321703	7	97	-1.51723316776913	8	0.277777777777778	Peripherals		peripheral	Bacteria	Actinobacteriota	Acidimicrobiia	Actinomarinales	uncultured
+54	Gaiella_sp._EBR4-RS1	10	0.333333333333333	192.680778716633	10	98	-0.910578445580232	7	0.48	Peripherals		peripheral	Bacteria	Actinobacteriota	Thermoleophilia	Gaiellales	uncultured
+238	uncultured_bacterium_PHOS-HE93	12	0.333922261484099	213.434590332493	12	99	-0.274015354714157	8	0.396694214876033	Peripherals		peripheral	Bacteria	Planctomycetota	BD7-11	No_Rank	No_Rank
+200	uncultured_Opitutus_sp.	14	0.356603773584906	284.065202314876	14	100	-0.17893462904415	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Opitutaceae
+61	Lacibacterium_aquatile	11	0.344262295081967	131.815326733996	11	101	-0.522658917325152	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	uncultured	No_Rank
+220	uncultured_Sterolibacterium_sp.	19	0.368421052631579	410.51059391442	19	102	1.46648958356281	8	0.345679012345679	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Rhodocyclaceae
+69	Methylophilaceae_bacterium	20	1	0	20	103	0	1	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Methylophilaceae
+287	uncultured_verrucomicrobium_DEV114	8	0.280832095096582	31.5013978546987	8	104	-1.26858960515814	8	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Pedosphaerales	Pedosphaeraceae
+89	Planctomycetes_bacterium_RIFOXYD2_FULL_41_16	17	0.347426470588235	192.365165204395	17	105	0.369798233357911	7	0.396694214876033	Peripherals		peripheral	Bacteria	Planctomycetota	Brocadiae	Brocadiales	Brocadiaceae
+154	uncultured_Caldilineae_bacterium	20	0.369140625	246.975993925769	20	106	0.918531095759973	7	0.473372781065089	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	RBG-13-54-9	No_Rank
+171	uncultured_Defluviicoccus_sp.	17	0.342391304347826	166.783835910006	17	107	0.969202458340816	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Defluviicoccales	Defluviicoccaceae
+213	uncultured_Rickettsiales_bacterium	12	0.327556325823224	93.2145481349408	12	108	-0.274015354714157	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Paracaedibacterales	Paracaedibacteraceae
+157	uncultured_Chlamydia_sp.	9	0.312913907284768	142.829384502117	9	109	-1.09348939971425	7	0.142011834319527	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	cvE6
+144	uncultured_Acidimicrobiia_bacterium	16	0.342391304347826	145.500481759038	16	110	0.720558895729821	8	0	Peripherals		ultra peripheral	Bacteria	Actinobacteriota	Acidimicrobiia	IMCC26256	No_Rank
+214	uncultured_Roseobacter_sp.	14	0.346153846153846	176.061782232612	14	111	0.223271770507832	8	0.277777777777778	Peripherals		peripheral	Bacteria	Bdellovibrionota	Oligoflexia	0319-6G20	No_Rank
+128	denitrifying_bacterium_enrichment_culture_clone_NOA_1_E9	13	0.343012704174229	270.59476225154	13	112	-0.0253717921031627	8	0.152777777777778	Peripherals		peripheral	Bacteria	Bacteroidota	Kryptonia	Kryptoniales	BSV26
+235	uncultured_bacterium_GR/GS-296.II.271	10	0.336298932384342	140.920124037011	10	113	-0.910578445580232	7	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	Caldilineales	Caldilineaceae
+4	Anaeromyxobacter_dehalogenans	19	0.338103756708408	155.483873047756	19	114	1.46648958356281	8	0	Peripherals		ultra peripheral	Bacteria	Myxococcota	Polyangia	Blfdi19	No_Rank
+289	unidentified_eubacterium_clone_BSV40	20	1	0	20	115	0	1	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Ignavibacteria	Ignavibacteriales	BSV40
+74	Novosphingobium_sp.	18	0.345521023765996	96.6164268136953	18	116	1.21784602095181	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Sphingomonadales	Sphingomonadaceae
+104	Verrucomicrobia_bacterium_ADurb.Bin474	9	0.324742268041237	188.358282062359	9	117	-1.01994604254714	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Isosphaerales	Isosphaeraceae
+96	Spartobacteria_bacterium_WX31	14	1	0	14	118	0	5	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Chthoniobacterales	Chthoniobacteraceae
+283	uncultured_verrucomicrobium_DEV008	3	0.271551724137931	63.6165164643686	3	119	-2.19095512451838	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Pedosphaerales	Pedosphaeraceae
+77	Parcubacteria_bacterium_C7867-005	20	0.369140625	101.128983224638	20	120	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Azambacteria	No_Rank
+146	uncultured_Acidobacteriales_bacterium	17	0.355263157894737	115.911736718843	17	121	0.369798233357911	7	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Blastocatellia	Blastocatellales	Blastocatellaceae
+29	Candidatus_Nomurabacteria_bacterium_RIFCSPHIGHO2_02_40_30	21	0.363461538461538	192.196524713139	21	122	1.10144204989399	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	UBA9983	No_Rank
+139	planctomycete_A-2	19	0.348708487084871	243.651171612351	19	123	1.46648958356281	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	OM190	No_Rank	No_Rank
+55	Gemmatimonadetes_bacterium_LX87	18	1	0	18	124	0	2	0	Peripherals		ultra peripheral	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	Gemmatimonadaceae
+135	marine_metagenome	14	0.357277882797732	273.784763748954	14	125	0.223271770507832	8	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Gracilibacteria	No_Rank	No_Rank
+41	Chitinimonas_viridis	10	0.314475873544093	116.118282151767	10	126	-0.771302479936147	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Chitinimonadaceae
+21	Candidatus_Kaiserbacteria_bacterium_RIFOXYB1_FULL_46_14	11	0.339928057553957	74.5348110732381	11	127	-0.727667491446212	7	0.46875	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Kaiserbacteria	No_Rank
+46	Deltaproteobacteria_bacterium_GWC2_55_46	21	0.381048387096774	425.349077854904	21	128	1.96377670878479	8	0.110726643598616	Peripherals		peripheral	Bacteria	DTB120	No_Rank	No_Rank	No_Rank
+26	Candidatus_Methylomirabilis_oxyfera	18	0.371316306483301	196.212142766934	18	129	0.552709187491932	7	0.297520661157025	Peripherals		peripheral	Bacteria	Methylomirabilota	Methylomirabilia	Methylomirabilales	Methylomirabilaceae
+90	Polynucleobacter_cosmopolitanus	20	1	0	20	130	0	1	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Burkholderiaceae
+174	uncultured_Desulfovirga_sp.	12	0.327556325823224	93.2145481349408	12	131	-0.274015354714157	8	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Holophagae	Subgroup_7	No_Rank
+264	uncultured_sludge_bacterium	12	1	0	12	132	0	6	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	PLTA13	No_Rank
+236	uncultured_bacterium_PHOS-HC15	15	0.362068965517241	135.666039732418	15	133	0.471915333118827	8	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Ignavibacteria	SJA-28	No_Rank
+114	bacterium_WH5-6	15	0.340540540540541	88.7245632743972	15	134	0.00397632508987011	7	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+288	unidentified	13	0.342391304347826	117.965482427106	13	135	-0.0253717921031627	8	0.46875	Peripherals		peripheral	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	uncultured
+9	Bacteroidetes_bacterium_GWF2_49_14	14	0.359315589353612	292.118250226773	14	136	-0.17893462904415	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Bacteroidetes_BD2-2
+284	uncultured_verrucomicrobium_DEV020	9	0.329842931937173	46.1146367095807	9	137	-1.09348939971425	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Pedosphaerales	Pedosphaeraceae
+140	planctomycete_WY69	17	0.344890510948905	387.799567817466	17	138	0.969202458340816	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Gemmatales	Gemmataceae
+88	Planctomycetes_bacterium	15	1	0	15	139	0	4	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+83	Parcubacteria_group_bacterium_GW2011_GWD2_43_10	20	1	0	20	140	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Kerfeldbacteria	No_Rank
+192	uncultured_Legionellales_bacterium	6	0.307317073170732	101.845760210095	6	141	-1.64222226211631	7	0.5	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Diplorickettsiales	Diplorickettsiaceae
+108	alpha_proteobacterium_MTB-KTN92	7	0.327556325823224	58.5794435247795	7	142	-1.45931130798229	7	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	uncultured
+167	uncultured_Conexibacteraceae_bacterium	16	0.356603773584906	172.136955788036	16	143	0.186887279223891	7	0	Peripherals		ultra peripheral	Bacteria	Actinobacteriota	Thermoleophilia	Solirubrobacterales	67-14
+2	Acidobacterium_sp._WY65	15	0.362068965517241	135.666039732418	15	144	0.471915333118827	8	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Acidobacteriae	Elev-16S-1166	No_Rank
+113	bacterium_RS5A	15	0.375	184.35419372046	15	145	0.00397632508987011	7	0.32	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Opitutales	Opitutaceae
+277	uncultured_soil_bacterium_PBS-25	19	0.366279069767442	133.201322800094	19	146	0.735620141625952	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Omnitrophia	Omnitrophales	Omnitrophaceae
+208	uncultured_Prosthecobacter_sp.	20	1	0	20	147	0	1	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Verrucomicrobiaceae
+168	uncultured_Cystobacterineae_bacterium	14	0.346153846153846	176.061782232612	14	148	0.223271770507832	8	0	Peripherals		ultra peripheral	Bacteria	Myxococcota	Polyangia	Blfdi19	No_Rank
+267	uncultured_sludge_bacterium_A21	14	1	0	14	149	0	5	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Verrucomicrobiales	Verrucomicrobiaceae
+81	Parcubacteria_group_bacterium_GW2011_GWA1_40_21	26	0.377245508982036	135.605832251339	26	150	2.0159968205641	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	No_Rank	No_Rank
+164	uncultured_Chromatiaceae_bacterium	9	0.323076923076923	116.050089181009	9	151	-1.01994604254714	8	0.18	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Tenderiales	Tenderiaceae
+30	Candidatus_Nomurabacteria_bacterium_RIFCSPHIGHO2_02_FULL_38_15	28	0.387295081967213	327.836825029629	28	152	2.38181872883214	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Nomurabacteria	No_Rank
+169	uncultured_Cytophaga_sp.	17	0.363461538461538	504.215545588963	17	153	0.969202458340816	8	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Rhodothermia	Rhodothermales	Rhodothermaceae
+95	Solirubrobacterales_bacterium_67-14	15	0.375	184.35419372046	15	154	0.00397632508987011	7	0.32	Peripherals		peripheral	Bacteria	Actinobacteriota	Thermoleophilia	Solirubrobacterales	67-14
+163	uncultured_Chloroflexus_sp.	15	0.366990291262136	190.961256666859	15	155	0.471915333118827	8	0.277777777777778	Peripherals		peripheral	Bacteria	Chloroflexi	TK10	No_Rank	No_Rank
+15	Candidatus_Abawacabacteria_bacterium_RBG_16_42_10	12	0.327556325823224	112.496715632177	12	156	-0.544756537312191	7	0.408163265306122	Peripherals		peripheral	Bacteria	Patescibacteria	Gracilibacteria	Candidatus_Abawacabacteria	No_Rank
+18	Candidatus_Collierbacteria_bacterium_RIFOXYC2_FULL_43_15	20	1	0	20	157	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Microgenomatia	Candidatus_Collierbacteria	No_Rank
+142	uncultured_Acanthamoeba	11	0.332161687170475	139.991631745935	11	158	-0.522658917325152	8	0.41522491349481	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	No_Rank
+116	bacterium_enrichment_culture_clone_Anammox_11	16	0.372047244094488	366.851233756409	16	159	0.186887279223891	7	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Phycisphaerae	CCM11a	No_Rank
+145	uncultured_Acidobacteria_bacterium	13	0.34115523465704	107.816372922266	13	160	-0.361845583178171	7	0.32	Peripherals		peripheral	Bacteria	Sumerlaeota	Sumerlaeia	Sumerlaeales	Sumerlaeaceae
+251	uncultured_cyanobacterium	20	0.355932203389831	335.308976553169	20	161	1.7151331461738	8	0.396694214876033	Peripherals		peripheral	Bacteria	Cyanobacteria	Vampirivibrionia	Caenarcaniphilales	No_Rank
+255	uncultured_eubacterium_WCHD3-88	15	1	0	15	162	0	4	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Chthoniobacterales	Terrimicrobiaceae
+273	uncultured_sludge_bacterium_H8	11	0.339317773788151	309.30736047147	11	163	-0.522658917325152	8	0.32	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	SBR1031	A4b
+34	Candidatus_Peregrinibacteria_bacterium_GW2011_GWF2_33_10	12	1	0	12	164	0	6	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Gracilibacteria	Candidatus_Peregrinibacteria	No_Rank
+177	uncultured_Devosia_sp.	14	0.345521023765996	117.845557767831	14	165	0.223271770507832	8	0.231111111111111	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Saprospiraceae
+242	uncultured_bacterium_contig00007	9	0.282934131736527	42.3482077686625	9	166	-1.01994604254714	8	0.355029585798817	Peripherals		peripheral	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	Gemmatimonadaceae
+286	uncultured_verrucomicrobium_DEV055	15	1	0	15	167	0	4	0.462809917355372	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Kiritimatiellae	WCHB1-41	No_Rank
+82	Parcubacteria_group_bacterium_GW2011_GWA2_40_14	17	0.332746478873239	364.150816819476	17	168	0.969202458340816	8	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Zambryskibacteria	No_Rank
+229	uncultured_Zavarzinella_sp.	5	0.302884615384615	76.2386306718374	5	169	-1.82513321625033	7	0.462809917355372	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Gemmatales	Gemmataceae
+66	Methylococcaceae_bacterium	17	0.361376673040153	220.949875220973	17	170	0.369798233357911	7	0.32	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
+262	uncultured_proteobacterium	16	0.353271028037383	407.841537349546	16	171	0.720558895729821	8	0	Peripherals		ultra peripheral	Bacteria	Gemmatimonadota	Gemmatimonadetes	Gemmatimonadales	Gemmatimonadaceae
+125	bacterium_enrichment_culture_clone_SRAO_47	13	0.327556325823224	86.7032188588567	13	172	-0.361845583178171	7	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Ignavibacteria	Ignavibacteriales	Ignavibacteriaceae
+22	Candidatus_Komeilibacteria_bacterium_RIFOXYC1_FULL_37_11	20	1	0	20	173	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Komeilibacteria	No_Rank
+68	Methyloparacoccus_murrellii	13	0.342391304347826	117.965482427106	13	174	-0.0253717921031627	8	0.32	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
+219	uncultured_Sphingobacterium_sp.	15	1	0	15	175	0	4	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Chitinophagaceae
+172	uncultured_Denitratisoma_sp.	13	0.329842931937173	234.565083161418	13	176	-0.0253717921031627	8	0.165289256198347	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	B1-7BS
+121	bacterium_enrichment_culture_clone_EBa7	18	1	0	18	177	0	2	0.332409972299169	Peripherals		peripheral	Bacteria	Patescibacteria	Microgenomatia	Candidatus_Pacebacteria	No_Rank
+132	groundwater_metagenome	13	0.346788990825688	151.101046266571	13	178	-0.0253717921031627	8	0.497041420118343	Peripherals		peripheral	Bacteria	Elusimicrobiota	Elusimicrobia	Lineage_IV	No_Rank
+3	Alphaproteobacteria_bacterium_RIFCSPHIGHO2_01_FULL_41_14	18	1	0	18	179	0	2	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	AB1
+17	Candidatus_Brocadia_caroliniensis	11	0.339928057553957	74.5348110732381	11	180	-0.727667491446212	7	0.396694214876033	Peripherals		peripheral	Bacteria	Planctomycetota	Brocadiae	Brocadiales	Brocadiaceae
+109	anammox_bacterium_enrichment_culture_clone_Udec-3	12	1	0	12	181	0	6	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Brocadiae	Brocadiales	Brocadiaceae
+70	Myxococcales_bacterium_enrichment_culture_clone_11380	14	1	0	14	182	0	5	0	Peripherals		ultra peripheral	Bacteria	Desulfobacterota	uncultured	No_Rank	No_Rank
+19	Candidatus_Colwellbacteria_bacterium_RBG_13_48_8	12	0.344890510948905	200.168384640529	12	183	-0.544756537312191	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Colwellbacteria	No_Rank
+221	uncultured_Syntrophaceae_bacterium	20	1	0	20	184	0	1	0	Peripherals		ultra peripheral	Bacteria	Desulfobacterota	Syntrophia	Syntrophales	Syntrophaceae
+23	Candidatus_Magasanikbacteria_bacterium_GW2011_GWA2_37_8	11	0.324185248713551	232.314637907878	11	185	-0.727667491446212	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Magasanikbacteria	No_Rank
+150	uncultured_Bacteroidales_bacterium	13	0.342391304347826	117.965482427106	13	186	-0.0253717921031627	8	0.473372781065089	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Prevotellaceae
+11	Bdellovibrionales_bacterium_RBG_16_40_8	15	0.366990291262136	190.961256666859	15	187	0.471915333118827	8	0.277777777777778	Peripherals		peripheral	Bacteria	Bdellovibrionota	Bdellovibrionia	Bdellovibrionales	Bdellovibrionaceae
+268	uncultured_sludge_bacterium_A31	13	0.319256756756757	171.19114715988	13	188	-0.0253717921031627	8	0.244897959183674	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	RBG-13-54-9	No_Rank
+117	bacterium_enrichment_culture_clone_Anammox_3	13	0.3375	139.184671408803	13	189	-0.0253717921031627	8	0.345679012345679	Peripherals		peripheral	Bacteria	WPS-2	No_Rank	No_Rank	No_Rank
+141	soil_bacterium_WWH121	9	0.282934131736527	42.3482077686625	9	190	-1.01994604254714	8	0.4296875	Peripherals		peripheral	Bacteria	Sumerlaeota	Sumerlaeia	Sumerlaeales	Sumerlaeaceae
+228	uncultured_Xiphinematobacteriaceae_bacterium	10	0.325862068965517	203.016680154015	10	191	-0.910578445580232	7	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Chthoniobacterales	Chthoniobacteraceae
+244	uncultured_bacterium_gp6	9	0.282934131736527	42.3482077686625	9	192	-1.01994604254714	8	0.336734693877551	Peripherals		peripheral	Bacteria	Acidobacteriota	Vicinamibacteria	Vicinamibacterales	Vicinamibacteraceae
+193	uncultured_Litorilinea_sp.	13	0.3375	225.196002142814	13	193	-0.0253717921031627	8	0.4296875	Peripherals		peripheral	Bacteria	Chloroflexi	Anaerolineae	Ardenticatenales	uncultured
+257	uncultured_green_sulfur_bacterium_GR-296.II.73	14	0.342391304347826	246.884125195534	14	194	0.223271770507832	8	0.444444444444444	Peripherals		peripheral	Bacteria	Bacteroidota	Kryptonia	Kryptoniales	BSV26
+80	Parcubacteria_group_bacterium_CG1_02_50_68	20	0.362763915547025	152.28552274779	20	195	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Kaiserbacteria	No_Rank
+12	Burkholderiales_bacterium_Beta_02	12	0.3375	257.233767668178	12	196	-0.274015354714157	8	0	Peripherals		ultra peripheral	Bacteria	WPS-2	No_Rank	No_Rank	No_Rank
+269	uncultured_sludge_bacterium_A40	15	0.366990291262136	190.961256666859	15	197	0.471915333118827	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+233	uncultured_bacterium_GC55	11	0.334513274336283	183.361405296846	11	198	-0.522658917325152	8	0	Peripherals		ultra peripheral	Bacteria	Armatimonadota	Fimbriimonadia	Fimbriimonadales	Fimbriimonadaceae
+25	Candidatus_Magasanikbacteria_bacterium_RIFOXYD2_FULL_36_9	19	0.35195530726257	276.455929390472	19	199	1.46648958356281	8	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Magasanikbacteria	No_Rank
+279	uncultured_soil_bacterium_PBS-III-30	20	1	0	20	200	0	1	0	Peripherals		ultra peripheral	Bacteria	Latescibacterota	No_Rank	No_Rank	No_Rank
+197	uncultured_Microgenomates_group_bacterium	9	0.303858520900322	43.9470642854225	9	201	-1.09348939971425	7	0.32	Peripherals		peripheral	Bacteria	Patescibacteria	Microgenomatia	Candidatus_Woesebacteria	No_Rank
+127	denitrifying_bacterium_enrichment_culture_clone_NOA_1_A8	12	1	0	12	202	0	6	0	Peripherals		ultra peripheral	Bacteria	Desulfobacterota	Desulfuromonadia	Desulfuromonadales	Geothermobacteraceae
+184	uncultured_Gemmatimonadetes_bacterium	20	0.369140625	101.128983224638	20	203	0.918531095759973	7	0	Peripherals		ultra peripheral	Bacteria	Gemmatimonadota	S0134_terrestrial_group	No_Rank	No_Rank
+196	uncultured_Methylococcaceae_bacterium	18	1	0	18	204	0	2	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Steroidobacterales	Steroidobacteraceae
+185	uncultured_Geobacter_sp.	14	1	0	14	205	0	5	0	Peripherals		ultra peripheral	Bacteria	MBNT15	No_Rank	No_Rank	No_Rank
+84	Parcubacteria_group_bacterium_GW2011_GWF2_52_12	25	0.380281690140845	184.429533138329	25	206	1.83308586643008	7	0.260355029585799	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Vogelbacteria	No_Rank
+217	uncultured_Solibacteraceae_bacterium	14	1	0	14	207	0	5	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Acidobacteriae	Bryobacterales	Bryobacteraceae
+126	delta_proteobacterium_WX152	8	0.313953488372093	19.8832233721682	8	208	-1.26858960515814	8	0.498866213151927	Peripherals		peripheral	Bacteria	MBNT15	No_Rank	No_Rank	No_Rank
+112	bacterium_RS25G	12	1	0	12	209	0	6	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Verrucomicrobiae	Pedosphaerales	Pedosphaeraceae
+42	Chlamydiales_bacterium_CRIB33	18	1	0	18	210	0	2	0.42	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	Simkaniaceae
+156	uncultured_Candidatus_Rhabdochlamydia_sp.	16	0.338103756708408	161.909585514885	16	211	0.720558895729821	8	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	Simkaniaceae
+57	Hydrocarboniphaga_daqingensis	15	1	0	15	212	0	4	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Salinisphaerales	Solimonadaceae
+47	Deltaproteobacteria_bacterium_RIFCSPLOWO2_02_FULL_40_36	15	1	0	15	213	0	4	0.375	Peripherals		peripheral	Bacteria	Myxococcota	bacteriap25	No_Rank	No_Rank
+14	Caedimonas_varicaedens	15	1	0	15	214	0	4	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Caedibacterales	Caedibacteraceae
+274	uncultured_sludge_bacterium_S14	10	0.324742268041237	80.498871494987	10	215	-0.771302479936147	8	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	SBR1031	A4b
+50	Estrella_lausannensis	10	0.325301204819277	173.862326732938	10	216	-0.910578445580232	7	0.497041420118343	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	Criblamydiaceae
+51	Flavisolibacter_ginsengisoli	18	1	0	18	217	0	2	0	Peripherals		ultra peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	Chitinophagaceae
+13	Caedibacter_taeniospiralis	17	1	0	17	218	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Francisellales	Francisellaceae
+43	Chlamydiales_bacterium_CRIB_32	17	1	0	17	219	0	3	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	cvE6
+20	Candidatus_Cyrtobacter_zanobii	18	1	0	18	220	0	2	0.489795918367347	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	Fokiniaceae
+263	uncultured_rape_rhizosphere_bacterium_wr0025	19	0.35195530726257	276.455929390472	19	221	1.46648958356281	8	0.290657439446367	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae
+87	Planctomyces_sp._SCGC_AG-212-M04	11	0.332161687170475	139.991631745935	11	222	-0.522658917325152	8	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Planctomycetales	Rubinisphaeraceae
+281	uncultured_sulfur-oxidizing_symbiont_bacterium	17	0.343012704174229	78.9540488768744	17	223	0.969202458340816	8	0.489795918367347	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Porticoccaceae
+222	uncultured_Syntrophobacteraceae_bacterium	17	1	0	17	224	0	3	0	Peripherals		ultra peripheral	Bacteria	Bdellovibrionota	Oligoflexia	0319-6G20	No_Rank
+72	Nocardioides_dilutus	18	1	0	18	225	0	2	0	Peripherals		ultra peripheral	Bacteria	Actinobacteriota	Actinobacteria	Propionibacteriales	Nocardioidaceae
+207	uncultured_Planctomycetia_bacterium	10	0.292117465224111	83.3949673109059	10	226	-0.771302479936147	8	0.3046875	Peripherals		peripheral	Bacteria	Planctomycetota	Planctomycetes	Gemmatales	Gemmataceae
+103	Veillonella_montpellierensis	15	1	0	15	227	0	4	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Negativicutes	Veillonellales-Selenomonadales	Veillonellaceae
+91	Prevotella_timonensis	9	0.282934131736527	42.3482077686625	9	228	-1.01994604254714	8	0.260355029585799	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Bacteroidales	Prevotellaceae
+79	Parcubacteria_group_bacterium_ADurb.Bin326	24	0.397058823529412	288.897830005311	24	229	1.65017491229605	7	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	ABY1	Candidatus_Kerfeldbacteria	No_Rank
+203	uncultured_Peptococcaceae_bacterium	20	1	0	20	230	0	1	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Clostridia	Thermincolales	Thermincolaceae
+36	Candidatus_Yanofskybacteria_bacterium_GW2011_GWF1_44_227	20	1	0	20	231	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Yanofskybacteria	No_Rank
+231	uncultured_anaerobic_ammonium-oxidizing_bacterium	12	1	0	12	232	0	6	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Chloroflexia	Thermomicrobiales	JG30-KF-CM45
+107	agricultural_soil_bacterium_SC-I-28	17	1	0	17	233	0	3	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+152	uncultured_Bellilinea_sp.	14	1	0	14	234	0	5	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	No_Rank	No_Rank
+1	Acanthamoeba_sp.	14	1	0	14	235	0	5	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rickettsiales	Mitochondria
+245	uncultured_bacterium_gp7	17	1	0	17	236	0	3	0	Peripherals		ultra peripheral	Bacteria	Acidobacteriota	Holophagae	Subgroup_7	No_Rank
+209	uncultured_Rhizobiales_bacterium	17	1	0	17	237	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Defluviicoccales	uncultured
+62	Lentisphaerae_bacterium_GWF2_50_93	14	1	0	14	238	0	5	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Lentisphaeria	Victivallales	GWF2-44-16
+65	Leptospira_licerasiae_serovar_Varillal	17	1	0	17	239	0	3	0	Peripherals		ultra peripheral	Bacteria	Spirochaetota	Leptospirae	Leptospirales	Leptospiraceae
+246	uncultured_bacterium_mle1-8	20	1	0	20	240	0	1	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Phycisphaerae	mle1-8	No_Rank
+101	Thiobacter_sp._enrichment_culture_clone_35Fe79	17	1	0	17	241	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae
+73	Novispirillum_itersonii	12	1	0	12	242	0	6	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	Rhodospirillaceae
+211	uncultured_Rhodospirillaceae_bacterium	6	0.321428571428571	161.720201607249	6	243	-1.76587673038013	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhodospirillales	uncultured
+250	uncultured_compost_bacterium	20	1	0	20	244	0	1	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	SBR1031	No_Rank
+166	uncultured_Conexibacter_sp.	12	0.327556325823224	112.496715632177	12	245	-0.544756537312191	7	0.48	Peripherals		peripheral	Bacteria	Actinobacteriota	Thermoleophilia	Solirubrobacterales	67-14
+191	uncultured_Ignavibacterium_sp.	18	1	0	18	246	0	2	0.375	Peripherals		peripheral	Bacteria	Bacteroidota	Ignavibacteria	SJA-28	No_Rank
+189	uncultured_Hyphomicrobiaceae_bacterium	12	1	0	12	247	0	6	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Micropepsales	Micropepsaceae
+223	uncultured_Thermobaculum_sp.	8	0.324742268041237	37.4819440654622	8	248	-1.27640035384827	7	0.260355029585799	Peripherals		peripheral	Bacteria	Chloroflexi	Ktedonobacteria	C0119	No_Rank
+248	uncultured_candidate_division_SR1_bacterium	20	1	0	20	249	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Gracilibacteria	Absconditabacteriales_(SR1)	No_Rank
+119	bacterium_enrichment_culture_clone_B55(2011)	12	1	0	12	250	0	6	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+173	uncultured_Desulfobulbaceae_bacterium	20	1	0	20	251	0	1	0.32	Peripherals		peripheral	Bacteria	SAR324_clade(Marine_group_B)	No_Rank	No_Rank	No_Rank
+165	uncultured_Clostridiales_bacterium	14	1	0	14	252	0	5	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Clostridia	Lachnospirales	Lachnospiraceae
+170	uncultured_Cytophagales_bacterium	14	0.345521023765996	117.845557767831	14	253	0.223271770507832	8	0.244897959183674	Peripherals		peripheral	Bacteria	Bacteroidota	Bacteroidia	Chitinophagales	uncultured
+243	uncultured_bacterium_corvenA4	12	1	0	12	254	0	6	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Chlamydiae	Chlamydiales	Parachlamydiaceae
+143	uncultured_Acidimicrobiaceae_bacterium	17	1	0	17	255	0	3	0	Peripherals		ultra peripheral	Bacteria	Actinobacteriota	Acidimicrobiia	Microtrichales	Ilumatobacteraceae
+78	Parcubacteria_bacterium_C7867-006	18	1	0	18	256	0	2	0.32	Peripherals		peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Zambryskibacteria	No_Rank
+115	bacterium_enrichment_culture_clone_12631	15	1	0	15	257	0	4	0.396694214876033	Peripherals		peripheral	Bacteria	Planctomycetota	Phycisphaerae	Phycisphaerales	Phycisphaeraceae
+40	Chitinilyticum_litopenaei_DSM_21440	14	0.345521023765996	117.845557767831	14	258	0.223271770507832	8	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Chitinibacteraceae
+32	Candidatus_Nucleicultrix_amoebiphila_FS5	18	1	0	18	259	0	2	0.297520661157025	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Caedibacterales	Caedibacteraceae
+186	uncultured_Gram-positive_bacterium	18	1	0	18	260	0	2	0	Peripherals		ultra peripheral	Bacteria	Margulisbacteria	No_Rank	No_Rank	No_Rank
+148	uncultured_Alicyclobacillaceae_bacterium	20	1	0	20	261	0	1	0.18	Peripherals		peripheral	Bacteria	Firmicutes	Bacilli	Alicyclobacillales	Alicyclobacillaceae
+39	Chitinilyticum_aquatile	15	1	0	15	262	0	4	0.345679012345679	Peripherals		peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Chitinibacteraceae
+71	Nitrosomonas_sp._PY1	15	1	0	15	263	0	4	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Burkholderiales	Nitrosomonadaceae
+270	uncultured_sludge_bacterium_A8	17	1	0	17	264	0	3	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Pirellulales	Pirellulaceae
+153	uncultured_Bradyrhizobiaceae_bacterium	15	1	0	15	265	0	4	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	uncultured	No_Rank
+278	uncultured_soil_bacterium_PBS-III-18	24	0.397058823529412	288.897830005311	24	266	1.65017491229605	7	0	Peripherals		ultra peripheral	Bacteria	Sumerlaeota	Sumerlaeia	Sumerlaeales	Sumerlaeaceae
+215	uncultured_Ruminococcaceae_bacterium	17	1	0	17	267	0	3	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Clostridia	Oscillospirales	Hungateiclostridiaceae
+194	uncultured_Lutispora_sp.	8	0.324742268041237	37.4819440654622	8	268	-1.27640035384827	7	0.5	Peripherals		peripheral	Bacteria	Armatimonadota	Chthonomonadetes	Chthonomonadales	No_Rank
+249	uncultured_candidate_division_WWE3_bacterium	18	1	0	18	269	0	2	0.297520661157025	Peripherals		peripheral	Bacteria	Patescibacteria	WWE3	No_Rank	No_Rank
+63	Lentisphaerae_bacterium_RIFOXYA12_64_32	18	1	0	18	270	0	2	0	Peripherals		ultra peripheral	Bacteria	Verrucomicrobiota	Lentisphaeria	Oligosphaerales	Lenti-02
+212	uncultured_Rhodospirillales_bacterium	17	1	0	17	271	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Paracaedibacterales	Paracaedibacteraceae
+271	uncultured_sludge_bacterium_A9	17	1	0	17	272	0	3	0	Peripherals		ultra peripheral	Bacteria	Myxococcota	Polyangia	Haliangiales	Haliangiaceae
+37	Candidatus_Zambryskibacteria_bacterium_RIFCSPLOWO2_12_FULL_39_16	17	1	0	17	273	0	3	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Parcubacteria	Candidatus_Azambacteria	No_Rank
+155	uncultured_Caldilineales_bacterium	20	1	0	20	274	0	1	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	Caldilineales	Caldilineaceae
+290	unidentified_eubacterium_clone_BSV81	18	1	0	18	275	0	2	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Limnochordia	No_Rank	No_Rank
+33	Candidatus_Omnitrophus_fodinae_SCGC_AAA011-A17	12	1	0	12	276	0	6	0.244897959183674	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Omnitrophia	Omnitrophales	Omnitrophaceae
+178	uncultured_Dongia_sp.	17	1	0	17	277	0	3	0	Peripherals		ultra peripheral	Bacteria	Desulfobacterota	uncultured	No_Rank	No_Rank
+137	methanotrophic_bacterium_GFS-K6	17	1	0	17	278	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Methylococcales	Methylococcaceae
+254	uncultured_eubacterium_WCHB1-84	14	1	0	14	279	0	5	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Clostridia	Thermincolales	Thermincolaceae
+179	uncultured_Epsilonproteobacteria_bacterium	20	1	0	20	280	0	1	0	Peripherals		ultra peripheral	Bacteria	Patescibacteria	Saccharimonadia	Saccharimonadales	No_Rank
+106	agricultural_soil_bacterium_SC-I-16	17	1	0	17	281	0	3	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Diplorickettsiales	Diplorickettsiaceae
+111	bacterium_Ellin6543	14	1	0	14	282	0	5	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	TK10	No_Rank	No_Rank
+285	uncultured_verrucomicrobium_DEV045	12	1	0	12	283	0	6	0.444444444444444	Peripherals		peripheral	Bacteria	Verrucomicrobiota	Kiritimatiellae	WCHB1-41	No_Rank
+180	uncultured_Fibrobacteres_bacterium	14	1	0	14	284	0	5	0	Peripherals		ultra peripheral	Bacteria	Latescibacterota	No_Rank	No_Rank	No_Rank
+204	uncultured_Phyllobacteriaceae_bacterium	15	1	0	15	285	0	4	0.5	Peripherals		peripheral	Bacteria	Proteobacteria	Alphaproteobacteria	Rhizobiales	Rhizobiales_Incertae_Sedis
+183	uncultured_Gemmata_sp.	15	1	0	15	286	0	4	0	Peripherals		ultra peripheral	Bacteria	Planctomycetota	Planctomycetes	Gemmatales	Gemmataceae
+240	uncultured_bacterium_SJA-35	18	1	0	18	287	0	2	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	Anaerolineae	RBG-13-54-9	No_Rank
+45	Chloroflexi_bacterium_OLB14	18	1	0	18	288	0	2	0	Peripherals		ultra peripheral	Bacteria	Chloroflexi	OLB14	No_Rank	No_Rank
+49	Escherichia_coli	20	1	0	20	289	0	1	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Alcanivoracaceae
+98	Streptomyces_sp._Q1	15	1	0	15	290	0	4	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Enterobacterales	Enterobacteriaceae
+85	Permianibacter_aggregans	14	1	0	14	291	0	5	0	Peripherals		ultra peripheral	Bacteria	Proteobacteria	Gammaproteobacteria	Pseudomonadales	Moraxellaceae
+253	uncultured_eubacterium_WCHB1-54	15	1	0	15	292	0	4	0	Peripherals		ultra peripheral	Bacteria	Firmicutes	Clostridia	Oscillospirales	UCG-010
