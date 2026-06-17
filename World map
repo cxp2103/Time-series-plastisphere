@@ -1,4 +1,4 @@
-#先画一个地图
+# Draw the base world map
 library(tidyverse)
 library(readxl)
 library(scatterpie)
@@ -19,7 +19,7 @@ ggplot() +
 
 
 
-#添加饼图&采样点
+# Add pie charts and sampling locations
 fig1a.dat<-read_excel("193_BPs&NBPs.xlsx",
                       sheet = "Fig1A")
 dat <- read.delim('PDGs_AMGs_pie3.txt', sep = '\t')
@@ -34,4 +34,4 @@ world.map +
                                 "NBPs"="#4393C3"),
                      name="Type")+
   guides(color=guide_legend(override.aes = list(size=5)))+
-  theme(legend.position = c(0.1,0.3),)
+  theme(legend.position = c(0.1,0.3))
