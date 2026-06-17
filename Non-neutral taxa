@@ -37,8 +37,8 @@ bacnlsALL <-data.frame(p,freq,freq.pred,pred.ci[,2:3])
 write.csv(bacnlsALL, file = "Family_PBS8.csv")
 
 inter.col<-rep('black',nrow(bacnlsALL))
-inter.col[bacnlsALL$freq <= bacnlsALL$Lower]<-'#A52A2A'#出现频率低于中性群落模型预测的部分
-  inter.col[bacnlsALL$freq >= bacnlsALL$Upper]<-'#29A6A6'#出现频率高于中性群落模型预测的部分
+inter.col[bacnlsALL$freq <= bacnlsALL$Lower]<-'
+  inter.col[bacnlsALL$freq >= bacnlsALL$Upper]<-'
 library(grid)
 grid.newpage()
 pushViewport(viewport(h=0.6,w=0.6))
