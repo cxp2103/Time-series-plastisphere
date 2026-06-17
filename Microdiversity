@@ -1,0 +1,66 @@
+MAG Dereplication and Microdiversity Profiling Workflow
+This workflow describes the procedures used for MAG dereplication, read mapping, genome indexing, and microdiversity profiling using dRep, bowtie2, prodigal, and inStrain.
+1. Directory structure
+Before running the workflow, prepare the following directories:
+temp/        # Clean data folder
+mags/        # MAG files
+result/      # Output folder
+Place the metadata.txt file in the result/ directory.
+The expected metadata file is:
+result/metadata.txt
+
+2. Dereplicate MAGs using dRep
+#Activate the conda environment
+conda activate genome
+#Run dRep dereplication
+dRep dereplicate dRep -g mags/*.fna -p 60 -pa 0.9 -sa 0.95 -nc 0.3 -cm larger -comp 90 -con 5 1> log.deredundancy_log
+
+3. Merge dereplicated MAGs into one FASTA file
+cat dRep/dereplicated_genomes/*.fna > allGenomes_v1.fasta
+
+4. Build the Bowtie2 index for MAGs
+#Create a new folder named bt2 before building the index.
+bowtie2-build allGenomes_v1.fasta bt2/allGenomes_v1.fasta
+
+5. Quality control for raw sequencing data
+#If the input files are raw data, perform quality control first.
+#If the input files are already clean data, skip this step.
+tail -n+2 result/metadata.txt|cut -f1|rush -j 2 \
+      "fastp -i seq/{1}_R1.fq.gz -o temp/{1}_1.fastq -I seq/{1}_r2.fq.gz -O temp/{1}_2.fastq"
+
+6. Generate SAM files by mapping clean reads to MAGs
+tail -n+2 result/metadata.txt|cut -f1|rush -j 1 \
+      "bowtie2 -p 80 -x bt2/allGenomes_v1.fasta -1 temp/{1}.clean.1.fq -2 temp/{1}.clean.2.fq > allGenomes_v1.fasta-vs-{1}.sam"
+
+7. Predict gene sequences from MAGs
+#Activate the conda environment
+conda activate metagenome
+#Run Prodigal
+prodigal -i allGenomes_v1.fasta -d allGenomes_v1.fasta.genes.fna
+
+8. Generate the .stb file for inStrain
+#This step is performed in R on a local computer using the script stb.R.
+#Check the format of the .stb file:
+head allGenomes_v1.fasta.maxbin2.stb
+Procedure:
+(1)	Put the dereplicated MAG files in the same folder as the stb.R script.
+(2)	Copy and paste the MAG file names into mag1.txt.
+(3)	Run stb.R.
+(4)	Copy the content of result_df.csv into allGenomes_v1.fasta.maxbin2.stb on the server.
+
+9. Calculate microdiversity using inStrain
+#Activate the conda environment
+conda activate instrain2
+#Run inStrain profile for each sample
+tail -n+2 result/metadata.txt|cut -f1|rush -j 1 \
+      "inStrain profile allGenomes_v1.fasta-vs-{1}.sam allGenomes_v1.fasta -o result/allGenomes_v1.fasta-vs-{1}.IS -p 60 -g allGenomes_v1.fasta.genes.fna -s allGenomes_v1.fasta.maxbin2.stb"
+
+Output files
+The main output files include:
+dRep/                                      # dRep dereplication results
+allGenomes_v1.fasta                        # Merged dereplicated MAGs
+bt2/                                       # Bowtie2 index files
+allGenomes_v1.fasta-vs-{sample}.sam        # Read-mapping SAM files
+allGenomes_v1.fasta.genes.fna              # Predicted gene sequences
+allGenomes_v1.fasta.maxbin2.stb            # Scaffold-to-bin file
+result/allGenomes_v1.fasta-vs-{sample}.IS  # inStrain output directory for each sample
