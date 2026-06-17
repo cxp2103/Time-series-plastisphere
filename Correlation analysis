@@ -1,6 +1,6 @@
 library(Hmisc)
-Cgene <- read.csv('virus_PBS4.csv', row.name = 1, check.names = FALSE)
-vOTU <- read.csv('host_PBS4.csv', row.name = 1, check.names = FALSE)
+Cgene <- read.csv('virus_PBS.csv', row.name = 1, check.names = FALSE)
+vOTU <- read.csv('host_PBS.csv', row.name = 1, check.names = FALSE)
 ab_corr <- rcorr(as.matrix(vOTU), as.matrix(Cgene), type = 'pearson')#可以改成spearman
 r3 <- ab_corr$r
 p3 <- ab_corr$P
