@@ -1,0 +1,40 @@
+library(tidyverse)
+library(NST)
+
+# Comparison among different treatments
+comm<-read.delim('/share/home/chenxuepeng/time_virome_new/Mst/Time_ASVs2000.txt',head=T,stringsAsFactors=F,row.names=1,sep = "\t",check.names = F)
+comm<-t(comm)
+
+# Load the metadata table containing sample labels
+Label <- read.delim(file="/share/home/chenxuepeng/time_virome_new/Mst/Time_Label.txt", sep="\t", header=T, check.names=F, row.names = 1)
+
+group <-select(Label,Treatment)
+group
+
+# Calculate NST/MST.
+# comm specifies the OTU/ASV abundance table.
+# group specifies the sample grouping information.
+# dist.method specifies the dissimilarity metric; here, the Jaccard dissimilarity index is used.
+# null.model specifies the null model algorithm; here, the default PF model is used.
+# rand specifies the number of randomizations; here, 1000 randomizations are used.
+# nworker specifies the number of threads to accelerate computation.
+set.seed(123)
+tnst <- tNST(comm = comm, group = group, dist.method = 'jaccard', null.model = 'PF', 
+             rand = 1000, nworker = 20)
+
+
+# Extract NST/MST values for within-group sample pairs
+nst_group <- tnst$index.pair.grp
+nst_group
+
+# Export the main statistical results
+write.table(nst_group, 'nst_group_time.txt', sep = '\t', row.names = FALSE, quote = FALSE)
+
+# Calculate the mean NST and Modified Stochasticity Ratio (MST) values for each treatment
+data1<-aggregate(nst_group$NST.ij.ruzicka, by=list(type=nst_group$group),mean)
+data2<-aggregate(nst_group$MST.ij.ruzicka, by=list(type=nst_group$group),mean)
+data<- cbind(data1,data2)
+colnames(data)<-c("Treatment","NST","treatment","MST")
+
+# Export the NST and MST values
+write.table(data, 'nst&mst_ave_time.txt', sep = '\t', row.names = FALSE, quote = FALSE)
